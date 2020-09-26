@@ -88,13 +88,9 @@ def nit (x, y, n):
 		line (screen, (0, 0, 0), (x + 10 * n, y + 10 * n), (x + 11 * n, y + 12 * n), 1)
 
 nit (300, 850, 5)
-
 nit (310, 845, 5)
-
 nit (320, 842, 5)
-
 nit (330, 840, 5)
-
 
 def nitN (x, y, n):
 	for i in range (1):
@@ -104,15 +100,9 @@ def nitN (x, y, n):
 		line (screen, (0, 0, 0), (x - 4 * n, y + 4 * n), (x - 5 * n, y + 6 * n), 1)
 
 nitN (300, 860, 3)
-
 nitN (303, 880, 3)
-
 nitN (317, 900, 4)
-
-
-
-#lines (screen, (119, 136, 153), 1, (325, 830), (327, 850), (330, 880), (333, 810), (335, 930), 1) #нитка v клубкe
-
+#нитка v клубкe
 
 circle (screen, (0, 128, 0), (50, 620), 15) #глаза
 circle (screen, (0, 0, 0), (50, 620), 15, 1)
@@ -135,7 +125,6 @@ def zrach2 (x, y, r, n):
 
 zrach2 (44, 614, 3, 8)
 zrach2 (84, 614, 3, 8)
-
 
 def zrach3 (x, y, r, n):
 	for i in range (n - 2, n):
@@ -168,35 +157,6 @@ arc (screen, (105, 105, 105), (73, 652, 73, 30), 1, 3, 1)
 arc (screen, (105, 105, 105), (0, 640, 73, 30), 0.5, 2.5, 1)
 arc (screen, (105, 105, 105), (0, 646, 73, 30), 0.5, 2.5, 1)
 arc (screen, (105, 105, 105), (0, 652, 73, 30), 0.5, 2.5, 1)
-
-
-
-
-
-#def xboct (x1, y1, N):
-#	x1_size = N * 125
-#	y1_size = N * 100
-#	arc (screen, (222, 184, 135), pugame.rect(x1, y1, x1_size, y1_size), np.pi / 2, np.pi, N)
-#	for i in range (1, N + 1):
-#		eellipse (screen, color_green, (x1 + 0.35 * x1_size * i , y1 - 0.2 * y1_size * i , N * 5, N * 25))
-#
-#
-#xboct (100, 200, 10)
-
-
-
-
-#for step in range (1):
-#
-#	x = 340
-#	while x < 480:
-#		x += 1
-#		for n in range (1):
-#			polygon (screen, (210, 105, 30), ((x, 260+x)), 0)
-#
-#
-#ellipse (screen, (210, 105, 30), ((340, 600), (420, 620), (480, 680), (400, 660)), 0) хвост
- 
 
 pygame.display.update()
 clock = pygame.time.Clock()
